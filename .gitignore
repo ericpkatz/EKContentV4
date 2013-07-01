@@ -1,0 +1,17 @@
+*.pubxml*
+
+EKContent.web/obj/
+
+EKContent.web/user_images/
+
+PublishProfiles/
+Scripts/tinymce/
+EKContent.web/App_Data/
+
+EKContent.web/user_files/
+
+art/
+packages/
+TestResults/
+EKContent.test/
+_Resharper.EkContent/

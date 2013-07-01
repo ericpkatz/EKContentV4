@@ -1,0 +1,25 @@
+﻿@model EKContent.web.Models.ViewModels.HomeIndexViewModel
+
+@{
+    ViewBag.Title = "Contact";
+}
+
+<h2>Contact Form</h2>
+
+@using (Html.BeginForm("SendMessage", "Home", new { id = Model.Page.Id}, FormMethod.Post))
+{
+    <div class="row">
+    <div class="span6">
+        @Html.Partial("ReviewFormControls", new EKContent.web.Models.Entities.Message {IsReview = false })
+    <div class="controls">
+    <button id="contact-submit" type="submit" class="btn btn-primary input-medium pull-right">Send</button>
+    </div>
+    </div>
+    </div>
+}
+@if (!String.IsNullOrEmpty(Model.Site.Phone))
+{
+<div class="row">Or give us a call at @Model.Site.Phone.</div>
+    <br clear="all" />
+}
+

@@ -1,0 +1,49 @@
+﻿@model EKContent.web.Models.ViewModels.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+}
+<script>
+    $(function () {
+        $("#Username").blur(function () {
+            if(localStorage)
+                localStorage["Username"] = $(this).val();
+        });
+    });
+
+</script>
+    @if(Model.GetRequest){
+<script>
+    $(function () {
+        if (localStorage && localStorage["Username"])
+            $("#Username").val(localStorage["Username"]);
+    });
+    
+</script>}
+<h3>Login</h3>
+
+
+@Html.Partial("Nav", Model.NavigationModel)
+@Html.ValidationSummary()
+
+@using (Html.BeginForm("Login", "Auth", FormMethod.Post, new { @class="well"}))
+{
+    @Html.HiddenFor(m=>m.NavigationModel.Page.Id)
+    <div class="control-group">
+    @Html.LabelFor(m => m.Username)
+    @Html.TextBoxFor(m => m.Username)
+    @Html.ValidationMessageFor(m => m.Username)
+    </div>
+    
+    <div class="control-group">
+    @Html.LabelFor(m => m.Password)
+    @Html.PasswordFor(m => m.Password)
+    @Html.ValidationMessageFor(m => m.Password)
+    </div>
+    
+    
+    
+    <button type="submit"  class="btn btn-primary btn-large">Login</button>
+    <button data-href="@Url.Action("Index", "Home", new { id = Model.NavigationModel.Page.Id })" class="btn btn-large">Cancel</button>
+    
+}

@@ -1,0 +1,14 @@
+C:\junk\OWDropBox\ekUtilities\bin\Debug\ekUtilities.dll
+C:\junk\OWDropBox\ekUtilities\bin\Debug\ekUtilities.pdb
+C:\junk\OWDropBox\ekUtilities\obj\Debug\ekUtilities.dll
+C:\junk\OWDropBox\ekUtilities\obj\Debug\ekUtilities.pdb
+C:\junk\OWDropBox\ekUtilities\obj\Debug\ekUtilities.csprojResolveAssemblyReference.cache
+C:\junk\OWDropBox\ekUtilities\bin\Debug\log4net.dll
+C:\junk\OWDropBox\ekUtilities\bin\Debug\log4net.xml
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\ekUtilities\bin\Debug\ekUtilities.dll
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\ekUtilities\bin\Debug\ekUtilities.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\ekUtilities\obj\Debug\ekUtilities.dll
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\ekUtilities\obj\Debug\ekUtilities.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\ekUtilities\bin\Debug\log4net.dll
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\ekUtilities\bin\Debug\log4net.xml
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\ekUtilities\obj\Debug\ekUtilities.csprojResolveAssemblyReference.cache

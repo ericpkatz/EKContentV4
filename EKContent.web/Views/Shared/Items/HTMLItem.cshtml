@@ -1,0 +1,14 @@
+﻿@model EKContent.web.Models.ViewModels.ContentWrapper
+
+@{
+    ViewBag.Title = "HTML";
+}
+
+        @if (Model.Content.ShowTitle)
+        {
+    <h4>@Model.Content.Title</h4>
+        } 
+ @Html.Partial("EditContentControls")
+ @Html.Partial("ImageItem")
+ @Html.Partial("Body")
+ @Html.Partial("File")

@@ -1,0 +1,86 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/f:Web.config" caret="1654" fromTop="8" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:AuthController.cs" caret="0" fromTop="0" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Database/d:DotNetMembership/f:EKDotNetRoleProvider.cs" caret="0" fromTop="0" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Database/d:DotNetMembership/f:EKDotNetMembershipProvider.cs" caret="679" fromTop="12" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Entities/f:EKRole.cs" caret="152" fromTop="7" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:MemberController.cs" caret="655" fromTop="20" />
+      <File id="E43F99C4-E398-42F5-94B7-F2A2215F2868/d:membership/f:JSONRoleProvider.cs" caret="458" fromTop="11" />
+      <File id="E43F99C4-E398-42F5-94B7-F2A2215F2868/d:membership/f:JSONMembershipProvider.cs" caret="135" fromTop="5" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/f:packages.config" caret="0" fromTop="0" />
+      <File id="d:Miscellaneous Files/f:site.js/l:C!?Users?ekatz?Desktop?DIY - AppData?site.js" caret="496" fromTop="0" />
+      <File id="d:Miscellaneous Files/f:styleSettings.js/l:C!?Users?ekatz?Desktop?DIY - AppData?styleSettings.js" caret="564" fromTop="0" />
+      <File id="E43F99C4-E398-42F5-94B7-F2A2215F2868/f:BaseEntity.cs" caret="849" fromTop="30" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Entities/f:BaseContent.cs" caret="980" fromTop="32" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Entities/f:PageNavigation.cs" caret="299" fromTop="14" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:HomeController.cs" caret="6889" fromTop="13" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Services/f:PageService.cs" caret="4121" fromTop="20" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Database/d:Abstract/f:IEKProvider.cs" caret="317" fromTop="12" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Database/d:Abstract/f:ICacheProvider.cs" caret="317" fromTop="12" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Database/d:Concrete/f:CacheProvider.cs" caret="1152" fromTop="30" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:ColorController.cs" caret="0" fromTop="0" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:FileController.cs" caret="0" fromTop="0" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Entities/f:CacheItem.cs" caret="209" fromTop="9" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Shared/f:_Layout.cshtml" caret="4873" fromTop="29" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Database/d:Concrete/f:EKProvider.cs" caret="2164" fromTop="12" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Shared/f:Nav.cshtml" caret="4174" fromTop="31" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:ViewModels/f:CacheListViewModel.cs" caret="197" fromTop="8" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:CacheController.cs" caret="782" fromTop="15" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:File/f:List.cshtml" caret="94" fromTop="4" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Cache/f:List.cshtml" caret="329" fromTop="12" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Utilities/f:ImageHelper.cs" caret="447" fromTop="7" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Services/f:PageService.cs" caret="5440" fromTop="20" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:HomeController.cs" caret="6858" fromTop="12" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Services/f:PageService.cs" caret="4130" fromTop="20" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Database/d:Abstract/f:IEKProvider.cs" caret="317" fromTop="12" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Database/d:Concrete/f:EKProvider.cs" caret="285" fromTop="10" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Database/d:Concrete/f:CacheProvider.cs" caret="704" fromTop="15" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Entities/f:CacheItem.cs" caret="209" fromTop="9" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Database/d:Abstract/f:ICacheProvider.cs" caret="317" fromTop="12" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Database/d:Concrete/f:CacheProvider.cs" caret="816" fromTop="18" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Database/d:Concrete/f:CacheProvider.cs" caret="943" fromTop="28" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Database/d:Concrete/f:CacheProvider.cs" caret="421" fromTop="8" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Database/d:Concrete/f:CacheProvider.cs" caret="1152" fromTop="30" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:Database/d:Concrete/f:EKProvider.cs" caret="2164" fromTop="12" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:CacheController.cs" caret="471" fromTop="17" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:CacheController.cs" caret="1656" fromTop="24" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:CacheController.cs" caret="505" fromTop="14" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Cache/f:List.cshtml" caret="386" fromTop="15" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Shared/f:_Layout.cshtml" caret="4873" fromTop="29" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Cache/f:List.cshtml" caret="698" fromTop="27" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:CacheController.cs" caret="958" fromTop="26" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:CacheController.cs" caret="1364" fromTop="34" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:CacheController.cs" caret="1292" fromTop="30" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:CacheController.cs" caret="1643" fromTop="31" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Shared/f:Nav.cshtml" caret="4174" fromTop="31" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:ViewModels/f:CacheListViewModel.cs" caret="197" fromTop="8" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:CacheController.cs" caret="855" fromTop="15" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Cache/f:List.cshtml" caret="17" fromTop="0" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Cache/f:List.cshtml" caret="453" fromTop="20" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Cache/f:List.cshtml" caret="142" fromTop="6" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Cache/f:List.cshtml" caret="329" fromTop="12" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

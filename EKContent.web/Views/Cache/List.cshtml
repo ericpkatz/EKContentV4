@@ -1,0 +1,33 @@
+﻿@model EKContent.web.Models.ViewModels.CacheListViewModel
+
+@{
+    ViewBag.Title = "List";
+}
+
+@Html.Partial("Nav", Model.NavigationModel)
+
+<p>
+    <button class="btn btn-primary" data-action="@Url.Action("Clear", new { pageId = Model.NavigationModel.Page.Id, })">Clear</button>
+</p>
+
+<table class="table table-stripes">
+    <tr>
+        <th>
+            Key
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.Items) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Key)
+        </td>
+
+        <td>
+             <button class="btn btn-primary" data-action="@Url.Action("Delete", new { pageId = Model.NavigationModel.Page.Id, Key = item.Key })">Delete</button>
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,103 @@
+﻿@model EKContent.web.Models.ViewModels.EditContentItemViewModel
+@{
+    ViewBag.Title = Model.TitleText();
+    ViewBag.SiteTitle = Model.NavigationModel.Site.Title; 
+}
+@Html.ValidationSummary()
+@Html.Partial("Nav", Model.NavigationModel)
+<h3>@Model.TitleText()</h3>
+@using (Html.BeginForm("EditContent", "Home", FormMethod.Post, new { @class = "well" }))
+{
+    @Html.HiddenFor(m => m.NavigationModel.Page.Id)
+    @Html.HiddenFor(m => m.Mdx)
+    @Html.HiddenFor(m => m.Idx)
+    <div class="row">
+        <div class="span2">
+            @Html.LabelFor(m => m.Content.Title)
+        </div>
+        <div class="span6">
+            @Html.TextBoxFor(m => m.Content.Title)
+            @Html.Help("The title of the content item.")
+            @Html.ValidationMessageFor(m => m.Content.Title)
+        </div>
+    </div>
+    <div class="row">
+        <div class="span2">
+            @Html.LabelFor(m => m.Content.DatePublished)
+        </div>
+        <div class="span6">
+            @Html.TextBox("Content.DatePublished", Model.Content.DatePublished == DateTime.MinValue ? DateTime.Now.ToShortDateString() : Model.Content.DatePublished.ToShortDateString(), new { @class="datepicker"})
+            @Html.Help("The date associated with this item.")
+            @Html.ValidationMessageFor(m => m.Content.DatePublished)
+        </div>
+    </div>    
+    <div class="row">
+        <div class="span2">
+            @Html.LabelFor(m => m.Content.ShowTitle)
+        </div>
+        <div class="span6">
+            @Html.EditorFor(m => m.Content.ShowTitle)
+            @Html.Help("Determines if title is shown.")
+        </div>
+    </div>
+    <div class="row">
+        <div class="span2">
+            @Html.LabelFor(m => m.Content.ImageId, "Select Image")
+        </div>
+        <div class="span6">
+            @Html.DropDownListFor(m => m.Content.ImageId, Model.SelectListImages())
+            @Html.Help("Image will appear before content body.")
+        </div>
+    </div>
+    <div class="row">
+        <div class="span2">
+            @Html.LabelFor(m => m.Content.BorderImage)
+        </div>
+        <div class="span6">
+            @Html.EditorFor(m => m.Content.BorderImage)
+            @Html.Help("Show border around image?")
+        </div>
+    </div>     
+    <div class="row">
+        <div class="span2">
+            @Html.LabelFor(m => m.Content.FileId, "Select File")
+        </div>
+        <div class="span6">
+            @Html.DropDownListFor(m => m.Content.FileId, Model.SelectListFiles())
+            @Html.Help("File will be downloadable in content item.")
+        </div>
+    </div>    
+    <div class="row">
+        <div class="span2">
+            @Html.LabelFor(m => m.Content.ShowAddThis)
+        </div>
+        <div class="span6">
+            @Html.EditorFor(m => m.Content.ShowAddThis)
+            @Html.Help("Will users be able to 'pin' this content")
+        </div>
+    </div>            
+    <div class="control-group">
+        <div style="width: 100%">
+            @Html.ValidationMessageFor(m => m.Content.Body)
+            @Html.TextAreaFor(m => m.Content.Body, new { @class = "richText", rows = 5 })
+            @Html.Help("The body of the content item.")
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="span2">
+        @Html.LabelFor(m => m.Content.Priority)
+        </div>
+        <div class="span6">
+        @Html.TextBoxFor(m => m.Content.Priority, new { @readonly = "readonly" })
+        <div data-slider="#Content_Priority" style="width:300px"></div>
+        @Html.Help("Use slider to change priority. Determines the order of the content item A priority item of 1 will come before a priority of 2.")
+        </div>
+    </div>       
+
+    <button type="submit" value="save" class="btn btn-primary btn-large">
+        Save</button>
+    <button class="btn btn-large" data-href=@Url.Action("Index", new { id = Model.NavigationModel.Page.Id })>
+        Cancel</button>
+    
+}

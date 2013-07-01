@@ -1,0 +1,21 @@
+﻿@model EKContent.web.Models.ViewModels.ContentWrapper
+
+@{
+    ViewBag.Title = "HTML";
+}
+
+@if (Model.Idx == 0)
+{   
+@Html.Partial("ReviewForm", new EKContent.web.Models.ViewModels.ReviewViewModel { ContentWrapper = Model, Message = new EKContent.web.Models.Entities.Message {IsReview = true } })
+}
+
+ @Html.Partial("EditContentControls")
+ @Html.Partial("ImageItem")
+    <blockquote>
+    <p>@Html.Raw(Model.Content.Body)</p>
+    @if (Model.Content.ShowTitle)
+    {
+    <small>@Model.Content.Title on @Model.Content.DatePublished.ToShortDateString()</small>
+    }
+    </blockquote>
+

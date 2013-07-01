@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EKContent.web", "EKContent.web\EKContent.web.csproj", "{669FEB53-9696-47C9-90C8-C7C878A1B615}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EKContent.test", "EKContent.test\EKContent.test.csproj", "{2C45BFF3-C540-405D-AA20-004FAA52149C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{955D498C-D1C6-4C64-AF1A-D5CEDDBB98B3}"
+	ProjectSection(SolutionItems) = preProject
+		EkContent.vsmdi = EkContent.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ekUtilities", "ekUtilities\ekUtilities.csproj", "{E43F99C4-E398-42F5-94B7-F2A2215F2868}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = EkContent.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{669FEB53-9696-47C9-90C8-C7C878A1B615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669FEB53-9696-47C9-90C8-C7C878A1B615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669FEB53-9696-47C9-90C8-C7C878A1B615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669FEB53-9696-47C9-90C8-C7C878A1B615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C45BFF3-C540-405D-AA20-004FAA52149C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C45BFF3-C540-405D-AA20-004FAA52149C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C45BFF3-C540-405D-AA20-004FAA52149C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C45BFF3-C540-405D-AA20-004FAA52149C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E43F99C4-E398-42F5-94B7-F2A2215F2868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E43F99C4-E398-42F5-94B7-F2A2215F2868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E43F99C4-E398-42F5-94B7-F2A2215F2868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E43F99C4-E398-42F5-94B7-F2A2215F2868}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

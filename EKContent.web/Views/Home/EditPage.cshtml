@@ -1,0 +1,75 @@
+﻿@model EKContent.web.Models.ViewModels.EditPageViewModel
+
+@{
+    ViewBag.Title = Model.TitleText();
+    ViewBag.SiteTitle = Model.NavigationModel.Site.Title;    
+}
+
+@Html.Partial("Nav", Model.NavigationModel)
+<h3>@Model.TitleText()</h3>
+@using (Html.BeginForm("EditPage", "Home", FormMethod.Post, new { @class="well"}))
+{
+    if (!Model.Inserting())
+    {
+        @Html.HiddenFor(m => m.Page.PageNavigation.Id)
+    }
+     @Html.HiddenFor(m => m.NavigationModel.Page.Id)
+     @Html.HiddenFor(m => m.ParentId)
+    <div class="control-group">
+    @Html.LabelFor(m => m.Page.PageNavigation.Title)
+    @Html.TextBoxFor(m => m.Page.PageNavigation.Title)
+    @Html.Help("The title of the page")
+    @Html.ValidationMessageFor(m => m.Page.PageNavigation.Title)
+    </div>
+    <div class="control-group">
+    @Html.LabelFor(m => m.Page.PageNavigation.DatePublished)
+            @Html.TextBox("Page.PageNavigation.DatePublished", Model.Page.PageNavigation.DatePublished == DateTime.MinValue ? DateTime.Now.ToShortDateString() : Model.Page.PageNavigation.DatePublished.ToShortDateString(), new { @class = "datepicker" })
+            @Html.Help("The display date for this page.")
+            @Html.ValidationMessageFor(m => Model.Page.PageNavigation.DatePublished)
+    </div>    
+        <div class="control-group">
+    @Html.TextBoxFor(m => m.Page.PageNavigation.Priority, new { @readonly = "readonly" })<div data-slider="#Page_PageNavigation_Priority" style="width:50%"></div>
+    @Html.Help("The priority of page. A page with a priority of 1 will show up before a page of priority 2")
+    </div>
+    <div class="control-group">
+    @Html.LabelFor(m => m.Page.PageNavigation.PageType)
+    @Html.DropDownListFor(m => m.Page.PageNavigation.PageType, Model.PageTypesSelectList()) 
+     @Html.Help("Blog will result in an accordian style, HTML will list all contents of page, Contact should only be used on the contact page")      
+    </div>
+    
+    <div class="control-group">
+        <div style="width: 100%">
+            @Html.ValidationMessageFor(m => m.Page.PageNavigation.Description)   
+            @Html.TextAreaFor(m => m.Page.PageNavigation.Description, new { @class = "richText", rows = 5 })
+            @Html.Help("The body of the content item.")
+        </div>   
+    </div>    
+    
+    <div class="control-group">
+    @Html.LabelFor(m => m.Page.PageNavigation.ShowTwitterFeed)
+    @Html.CheckBoxFor(m => m.Page.PageNavigation.ShowTwitterFeed)
+     @Html.Help("If Twitter is configured- Feed will be displayed on right side of page.")       
+    </div>    
+    <div class="control-group">
+    @Html.LabelFor(m => m.Page.PageNavigation.Active)
+    @Html.CheckBoxFor(m => m.Page.PageNavigation.Active)
+     @Html.Help("Whether or not the page will be seen- not currently being used.")       
+    </div>
+    <div class="control-group">
+    @Html.LabelFor(m => m.Page.PageNavigation.ShowPageDescriptionInHeroUnit)
+    @Html.CheckBoxFor(m => m.Page.PageNavigation.ShowPageDescriptionInHeroUnit)
+     @Html.Help("Whether or not the page description will be displayed in a hero unit.")       
+    </div>        
+    if (Model.Page.HasContent())
+    {
+    <div class="control-group">
+    <button class="btn btn-large btn-warning" data-action-post=@Url.Action("MovePage")>Move the content on this page to a new page below this page.</button>
+    
+     @Html.Help("This can be used to add new content to this page and 'retire' the content on this page.")       
+    </div>       
+    }
+    
+    <button type="submit" value="save" class="btn btn-primary btn-large">Save</button>
+    <button class="btn btn-large" data-href=@Url.Action("Index", new { id = Model.Id() })>Cancel</button>
+    
+}

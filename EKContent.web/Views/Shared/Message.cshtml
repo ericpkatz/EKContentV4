@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Message.cshtml";
+}
+    <script>
+        $(function () {
+
+            $(".alert-info").css("opacity", 0).animate(
+            { opacity: 1.0 },
+            function () {
+                var that = $(this);
+                var fn = function () {
+                    that.animate({ "opacity": 0 },
+                        function () {
+                            $(this).hide("slow");
+                        }
+                    );
+                }
+                setTimeout(fn, 1000);
+            }
+        );
+        });
+</script>
+@if (TempData["message"] != null)
+{
+    <div class="alert alert-info">
+    @TempData["message"]
+    </div>
+}

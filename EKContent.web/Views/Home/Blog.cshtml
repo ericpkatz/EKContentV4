@@ -1,0 +1,24 @@
+﻿@model EKContent.web.Models.ViewModels.HomeIndexViewModel
+
+@{
+    ViewBag.Title = "Contact";
+}
+
+
+<table class="table table-striped">
+@foreach (var page in Model.ChildPages())
+{
+    <tr>
+        <td>
+        <em>@page.DatePublished.ToShortDateString()</em>
+
+        @Html.ActionLink(page.Title, "Index", new { pageTitle = page.PagePath() })
+        <p>
+        @Html.Raw(page.Description)
+        <small>@Html.ActionLink("read more...", "Index", new { pageTitle = page.PagePath() })</small>
+        </p>
+        </td>
+    </tr>
+}
+</table>
+
