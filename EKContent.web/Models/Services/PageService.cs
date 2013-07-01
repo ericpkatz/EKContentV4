@@ -32,6 +32,7 @@ namespace EKContent.web.Models.Services
             if (_dal.StyleSettingsProvider.Get().Count == 0)
                 SetStyleSettings(new StyleSettings
                 {
+                    Settings = new List<StyleSetting>{}
                 });
             return _dal.StyleSettingsProvider.Get().First();
         }
