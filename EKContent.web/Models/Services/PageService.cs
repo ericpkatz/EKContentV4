@@ -90,6 +90,11 @@ namespace EKContent.web.Models.Services
 
         public Page GetHomePage()
         {
+            if (_dal.PageNavigationProvider.Get().Count == 0)
+                _dal.PageNavigationProvider.Set(new PageNavigation
+                {
+                    Title = "Home"
+                });
             var page = _dal.PageNavigationProvider.Get().Where(p => p.IsHomePage()).Single();
             return GetPage(page.Id);
         }
