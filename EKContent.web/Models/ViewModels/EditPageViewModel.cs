@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using EKContent.web.Models.Database.Concrete;
-using EKContent.web.Models.Entities;
-using EKContent.web.Models.Services;
+using EKContent.bus.Concrete;
+using EKContent.bus.Entities;
+using EKContent.bus.Services;
 
 namespace EKContent.web.Models.ViewModels
 {

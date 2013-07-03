@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B8D0D77-1719-45A5-ABA7-267979B7638E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EKContent.bus</RootNamespace>
+    <AssemblyName>EKContent.bus</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetOpenAuth">
+      <HintPath>..\EKContent.web\bin\DotNetOpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.5.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EKContent.web\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\ICacheProvider.cs" />
+    <Compile Include="Abstract\IEkDataProvider.cs" />
+    <Compile Include="Abstract\IEKProvider.cs" />
+    <Compile Include="Abstract\IEKRoleProvider.cs" />
+    <Compile Include="Concrete\CacheProvider.cs" />
+    <Compile Include="Concrete\EkDataProvider.cs" />
+    <Compile Include="Concrete\EKProvider.cs" />
+    <Compile Include="Concrete\EKRoleProvider.cs" />
+    <Compile Include="Concrete\TweetProvider.cs" />
+    <Compile Include="Entitities\BaseContent.cs" />
+    <Compile Include="Entitities\CacheItem.cs" />
+    <Compile Include="Entitities\Color.cs" />
+    <Compile Include="Entitities\Content.cs" />
+    <Compile Include="Entitities\EKFile.cs" />
+    <Compile Include="Entitities\EKRole.cs" />
+    <Compile Include="Entitities\EKUser.cs" />
+    <Compile Include="Entitities\Image.cs" />
+    <Compile Include="Entitities\Message.cs" />
+    <Compile Include="Entitities\Module.cs" />
+    <Compile Include="Entitities\ModuleType.cs" />
+    <Compile Include="Entitities\Page.cs" />
+    <Compile Include="Entitities\PageNavigation.cs" />
+    <Compile Include="Entitities\Site.cs" />
+    <Compile Include="Entitities\StyleSetting.cs" />
+    <Compile Include="Entitities\StyleSettings.cs" />
+    <Compile Include="Entitities\TwitterKeys.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\PageService.cs" />
+    <Compile Include="Services\StylesProvider.cs" />
+    <Compile Include="ThirdParty\Twitter\LongTermTokenProvider.cs" />
+    <Compile Include="ThirdParty\Twitter\ShortTermTokenProvider.cs" />
+    <Compile Include="ThirdParty\Twitter\TwitterBaseClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ekUtilities\ekUtilities.csproj">
+      <Project>{E43F99C4-E398-42F5-94B7-F2A2215F2868}</Project>
+      <Name>ekUtilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

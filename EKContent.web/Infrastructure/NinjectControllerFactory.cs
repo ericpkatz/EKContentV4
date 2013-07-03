@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using EKContent.web.Models.Database.Abstract;
-using EKContent.web.Models.Database.Concrete;
+using EKContent.bus.Abstract;
+using EKContent.bus.Concrete;
 using Ninject;
 
 namespace EKContent.web.Infrastructure

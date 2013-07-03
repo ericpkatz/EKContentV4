@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using EKContent.web.Models.Database.Abstract;
-using EKContent.web.Models.Entities;
-using EKContent.web.Models.Services;
+using EKContent.bus.Abstract;
+using EKContent.bus.Entities;
+using EKContent.bus.Services;
 using EKContent.web.Models.ViewModels;
 using EKContent.web.ThirdParty.Twitter;
 

@@ -6,11 +6,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
-using EKContent.web.Models.Database.Abstract;
-using EKContent.web.Models.Services;
+using EKContent.bus.Abstract;
+using EKContent.bus.Services;
 using EKContent.web.Models.ViewModels;
 using System.IO;
-using EKContent.web.Models.Entities;
+using EKContent.bus.Entities;
 
 namespace EKContent.web.Controllers
 {
@@ -56,7 +56,7 @@ namespace EKContent.web.Controllers
                         System.IO.File.Delete(oldFilePath);
 
                 }
-                var saveTo = this.Server.MapPath(String.Format("~/user_files/{0}", model.File.NameWithExtension()));
+                var saveTo = this.Server.MapPath(String.Format("~/user_files/{0}", model.File.FileName));
                 this.Request.Files[0].SaveAs(saveTo);
             }
 

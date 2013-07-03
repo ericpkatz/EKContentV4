@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
+using EKContent.bus.Entities;
 
 namespace EKContent.web.Models.ViewModels
 {
     public class MemberIndexViewModel : BaseViewModel
     {
-        public List<Entities.EKRole> Roles { get; set; }
+        public List<EKRole> Roles { get; set; }
     }
 }

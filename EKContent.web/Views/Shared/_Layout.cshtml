@@ -3,7 +3,7 @@
 <head>
 <link rel="icon" 
       type="image/png" 
-      href="@Url.Content(String.Format("~/{0}.ico", ((EKContent.web.Models.Services.PageService)ViewBag.Service).GetSite().Title))">
+      href="@Url.Content(String.Format("~/{0}.ico", ((EKContent.bus.Services.PageService)ViewBag.Service).GetSite().Title))">
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -139,10 +139,10 @@
     <br clear="all" />
     <div id="footer">
     <div class="container">
-      @{int homePageId = ((EKContent.web.Models.Services.PageService)ViewBag.Service).GetHomePage().Id;}
+      @{int homePageId = ((EKContent.bus.Services.PageService)ViewBag.Service).GetHomePage().Id;}
 
 
-      @foreach (var page in ((EKContent.web.Models.Services.PageService)ViewBag.Service).GetNavigation().Where(p=> p.Id == homePageId || p.ParentId == homePageId))
+      @foreach (var page in ((EKContent.bus.Services.PageService)ViewBag.Service).GetNavigation().Where(p=> p.Id == homePageId || p.ParentId == homePageId))
       {
           <div style="padding-right:20px;float: left;font-size:smaller;">
         @Html.ActionLink(page.Title, "Index", "Home", new { pageTitle = page.PagePath() }, null)

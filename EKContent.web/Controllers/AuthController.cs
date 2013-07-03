@@ -4,8 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
-using EKContent.web.Models.Database.Abstract;
-using EKContent.web.Models.Services;
+using EKContent.bus.Abstract;
+using EKContent.bus.Services;
 using EKContent.web.Models.ViewModels;
 
 namespace EKContent.web.Controllers

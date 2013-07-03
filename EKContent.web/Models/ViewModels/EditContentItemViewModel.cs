@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using EKContent.web.Models.Entities;
+using EKContent.bus.Entities;
 
 namespace EKContent.web.Models.ViewModels
 {

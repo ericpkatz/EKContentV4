@@ -98,8 +98,6 @@
         </div>
         @Html.HiddenFor(m => m.NavigationModel.Page.Id)
         <br clear="all" />
-        <div class="row">
-        <div class="form-actions">
             <button type="submit" value="save" class="btn btn-primary btn-large btn-block">
                 Save</button>
                 <br clear="all" />
@@ -114,8 +112,6 @@
                 <br clear="all" />
             <button class="btn btn-large btn-warning btn-block" data-action=@Url.Action("Clear", new { id = Model.NavigationModel.Page.Id })>
                 Clear Settings</button>
-        </div>
-        </div>
     
     }
 </div>

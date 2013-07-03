@@ -1,19 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
-using DotNetOpenAuth.Messaging;
-using DotNetOpenAuth.OAuth;
-using DotNetOpenAuth.OAuth.ChannelElements;
-using EKContent.web.Models.Database.Abstract;
-using EKContent.web.Models.Entities;
-using EKContent.web.Models.Services;
+using EKContent.bus.Abstract;
 using EKContent.web.Models.ViewModels;
-using EKContent.web.ThirdParty.Twitter;
-using EKContent.web.Utilities;
+using EKContent.bus.Entities;
 
 namespace EKContent.web.Controllers
 {
@@ -55,7 +44,7 @@ namespace EKContent.web.Controllers
         {
             ModelState.Clear();
             model.NavigationModel = HomeIndexViewModelLoader.Create(model.NavigationModel.Page.PageNavigation.Id, _service);
-            model.Colors.Add(new EKContent.web.Models.Entities.Color {});
+            model.Colors.Add(new Color {});
             return View("Edit", model);
         }
         [HttpPost]

@@ -21,7 +21,7 @@ namespace ekUtilities
         public BaseService(IRepository<T> DAL, ICacheProvider store, ILogProvider log)
         {
             this.DAL = DAL;
-            this.store = store;
+            this.store = store ?? new EmptyCacheProvider();
             this.log = log;
         }
 

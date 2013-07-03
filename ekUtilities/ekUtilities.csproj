@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="BaseEntity.cs" />
     <Compile Include="BaseService.cs" />
+    <Compile Include="EmptyCacheProvider.cs" />
     <Compile Include="FileRepository.cs" />
     <Compile Include="ICacheProvider.cs" />
     <Compile Include="ILogProvider.cs">

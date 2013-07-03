@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using EKContent.web.Models.Services;
+using EKContent.bus.Services;
 
 namespace EKContent.web.Models.ViewModels
 {

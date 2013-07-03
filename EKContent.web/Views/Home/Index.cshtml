@@ -45,11 +45,11 @@ else if (Model.Page.PageNavigation.ShowSimpleDescription())
     </div>
     Mdx++;
 }
-@if (Model.Page.PageType == EKContent.web.Models.Entities.PageTypes.Contact)
+@if (Model.Page.PageType == EKContent.bus.Entities.PageTypes.Contact)
 {
     @Html.Partial("Contact")
 }
-@if (Model.Page.PageType == EKContent.web.Models.Entities.PageTypes.Blog)
+@if (Model.Page.PageType == EKContent.bus.Entities.PageTypes.Blog)
 {
     @Html.Partial("Blog")
 }
@@ -60,10 +60,10 @@ else if (Model.Page.PageNavigation.ShowSimpleDescription())
 @Html.Partial("TwitterFeed", new TwitterTimelineViewModel
 {
     NavigationModel = Model,
-    Tweets = ((EKContent.web.Models.Services.PageService)ViewBag.Service).GetTweets(),
+    Tweets = ((EKContent.bus.Services.PageService)ViewBag.Service).GetTweets(),
     TwitterLink = String.Format("https://twitter.com/{0}",
-        ((EKContent.web.Models.Services.PageService)ViewBag.Service).GetTwitterKeys().TwitterHandle),
-        ShowFeed = ((EKContent.web.Models.Services.PageService)ViewBag.Service).ShowTwitterFeed()
+        ((EKContent.bus.Services.PageService)ViewBag.Service).GetTwitterKeys().TwitterHandle),
+        ShowFeed = ((EKContent.bus.Services.PageService)ViewBag.Service).ShowTwitterFeed()
 })
 </div>
 }

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
-using EKContent.web.Models.Database.Concrete;
-using EKContent.web.Models.Entities;
+using EKContent.bus.Concrete;
+using EKContent.bus.Entities;
 
 namespace EKContent.web.Models.Database.DotNetMembership
 {

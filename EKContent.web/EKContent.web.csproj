@@ -122,38 +122,8 @@
     <Compile Include="Infrastructure\HtmlHelpers.cs" />
     <Compile Include="Infrastructure\NavigationModelBinder.cs" />
     <Compile Include="Infrastructure\NinjectControllerFactory.cs" />
-    <Compile Include="Models\Database\Abstract\ICacheProvider.cs" />
-    <Compile Include="Models\Database\Abstract\IEKProvider.cs" />
-    <Compile Include="Models\Database\Abstract\IEkDataProvider.cs" />
-    <Compile Include="Models\Database\Abstract\IEKRoleProvider.cs" />
-    <Compile Include="Models\Database\Concrete\CacheProvider.cs" />
-    <Compile Include="Models\Database\Concrete\EKProvider.cs" />
-    <Compile Include="Models\Database\Concrete\EKRoleProvider.cs" />
-    <Compile Include="Models\Database\Concrete\EkDataProvider.cs" />
-    <Compile Include="Models\Database\Concrete\TweetProvider.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Models\Entities\CacheItem.cs" />
-    <Compile Include="Models\Entities\Color.cs" />
-    <Compile Include="Models\Entities\EKFile.cs" />
-    <Compile Include="Models\Entities\PageNavigation.cs" />
-    <Compile Include="Models\Entities\Image.cs" />
-    <Compile Include="Models\Entities\EKRole.cs" />
-    <Compile Include="Models\Entities\EKUser.cs" />
     <Compile Include="Models\Database\DotNetMembership\EKDotNetMembershipProvider.cs" />
     <Compile Include="Models\Database\DotNetMembership\EKDotNetRoleProvider.cs" />
-    <Compile Include="Models\Entities\BaseContent.cs" />
-    <Compile Include="Models\Entities\Content.cs" />
-    <Compile Include="Models\Entities\Message.cs" />
-    <Compile Include="Models\Entities\Module.cs" />
-    <Compile Include="Models\Entities\ModuleType.cs" />
-    <Compile Include="Models\Entities\Page.cs" />
-    <Compile Include="Models\Entities\Site.cs" />
-    <Compile Include="Models\Entities\StyleSetting.cs" />
-    <Compile Include="Models\Entities\StyleSettings.cs" />
-    <Compile Include="Models\Entities\TwitterKeys.cs" />
-    <Compile Include="Models\Services\PageService.cs" />
-    <Compile Include="Models\Styles\StylesProvider.cs" />
     <Compile Include="Models\ViewModels\BaseViewModel.cs" />
     <Compile Include="Models\ViewModels\ContentWrapper.cs" />
     <Compile Include="Models\ViewModels\ColorEditViewModel.cs" />
@@ -396,6 +366,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\Services\" />
+    <Folder Include="Models\Styles\" />
     <Folder Include="Views\Twitter\" />
   </ItemGroup>
   <ItemGroup>
@@ -450,6 +422,10 @@
     <Content Include="Views\Cache\List.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EKContent.bus\EKContent.bus.csproj">
+      <Project>{2B8D0D77-1719-45A5-ABA7-267979B7638E}</Project>
+      <Name>EKContent.bus</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ekUtilities\ekUtilities.csproj">
       <Project>{E43F99C4-E398-42F5-94B7-F2A2215F2868}</Project>
       <Name>ekUtilities</Name>

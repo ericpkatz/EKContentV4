@@ -4,8 +4,8 @@ using System.Linq;
 using System.Web;
 using DotNetOpenAuth.OAuth.ChannelElements;
 using EKContent.web.Infrastructure;
-using EKContent.web.Models.Entities;
-using EKContent.web.Models.Services;
+using EKContent.bus.Entities;
+using EKContent.bus.Services;
 
 namespace EKContent.web.ThirdParty.Twitter
 {
