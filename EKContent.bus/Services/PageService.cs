@@ -109,7 +109,7 @@ namespace EKContent.bus.Services
         public Page GetPage(int id)
         {
             var page = new Page {PageNavigation = _dal.PageNavigationProvider.Get().Where(p => p.Id == id).Single()};
-            
+            page.PageNavigation.Feed = _dal.FeedProvider.Get(page.PageNavigation.FeedId);
             page.Modules = _dataProvider.Get(page.PageNavigation.Id);
             foreach(var module in page.Modules)
                 foreach (var item in module.Content)

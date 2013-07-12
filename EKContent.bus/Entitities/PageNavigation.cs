@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
+using System.Web.Script.Serialization;
+using EKContent.bus.Entitities;
 using ekUtilities;
 
 namespace EKContent.bus.Entities
@@ -31,6 +33,11 @@ namespace EKContent.bus.Entities
             get;
             set;
         }
+
+        public int FeedId { get; set; }
+
+        [ScriptIgnore]
+        public Feed Feed { get; set; }
 
         public string PagePath()
         {
@@ -65,7 +72,8 @@ namespace EKContent.bus.Entities
             transferDataTo.Priority = Priority;
             transferDataTo.ShowTwitterFeed = ShowTwitterFeed;
             transferDataTo.ShowPageDescriptionInHeroUnit = ShowPageDescriptionInHeroUnit;
-            transferDataTo.DatePublished = DatePublished;            
+            transferDataTo.DatePublished = DatePublished;
+            transferDataTo.FeedId = FeedId;
         }
     }
 }

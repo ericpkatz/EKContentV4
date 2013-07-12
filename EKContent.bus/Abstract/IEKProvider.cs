@@ -1,4 +1,5 @@
 ﻿using EKContent.bus.Entities;
+using EKContent.bus.Entitities;
 using ekUtilities;
 using Newtonsoft.Json.Linq;
 
@@ -16,6 +17,7 @@ namespace EKContent.bus.Abstract
         BaseService<StyleSettings> StyleSettingsProvider { get;  }
         BaseService<Color> ColorProvider { get;  }
         BaseService<EKFile> FileProvider { get; }
+        BaseService<Feed> FeedProvider { get; }
         JArray Tweets(TwitterKeys keys);
     }
 }

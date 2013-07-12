@@ -68,6 +68,7 @@
     <Compile Include="Entitities\EKFile.cs" />
     <Compile Include="Entitities\EKRole.cs" />
     <Compile Include="Entitities\EKUser.cs" />
+    <Compile Include="Entitities\Feed.cs" />
     <Compile Include="Entitities\Image.cs" />
     <Compile Include="Entitities\Message.cs" />
     <Compile Include="Entitities\Module.cs" />

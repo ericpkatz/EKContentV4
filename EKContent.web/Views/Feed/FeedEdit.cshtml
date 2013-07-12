@@ -1,0 +1,63 @@
+﻿@model EKContent.web.Models.ViewModels.BaseEntityEditViewModel<EKContent.bus.Entitities.Feed>
+@{
+    ViewBag.Title = "List";
+}
+
+@{
+    var model = Model.NavigationModel;
+}
+
+@Html.Partial("Nav", Model.NavigationModel)
+
+<script>
+    $(function () {
+        var setPreview = function () {
+            var data = JSON.parse($("[name='Item.SampleData']").val());
+            var tmpl = $("[name='Item.Template']").val();
+            $("#feed-preview").html(Mustache.to_html(tmpl, data));
+        }
+        $("[name='Item.SampleData'],[name='Item.Template']").change(setPreview);
+        setPreview();
+    });
+
+</script>
+
+<h1>@(Model.Item.IsNew() ? "Create" : "Edit") Feed</h1>
+<div id="feed-preview" class="alert">
+
+</div>
+<div id="feed-preview"></div>
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.Item.Id);                                   
+    
+    if (!Model.Item.IsNew())
+    {
+        @Html.HiddenFor(m => m.Item.DateCreated)
+    }
+    @Html.HiddenFor(m => m.NavigationModel.Page.Id)
+    <div class="control-group">
+    @Html.LabelFor(m => m.Item.Title)
+    @Html.TextBoxFor(m => m.Item.Title)
+    @Html.ValidationMessageFor(m => m.Item.Title)
+    </div>
+    <div class="control-group">
+    @Html.LabelFor(m => m.Item.URL)
+    @Html.TextBoxFor(m => m.Item.URL)
+    @Html.ValidationMessageFor(m => m.Item.URL)
+    </div>
+    <div class="control-group">
+    @Html.LabelFor(m => m.Item.Template)
+    @Html.TextAreaFor(m => m.Item.Template)
+    @Html.ValidationMessageFor(m => m.Item.Template)
+    </div>
+    <div class="control-group">
+    @Html.LabelFor(m => m.Item.SampleData)
+    @Html.TextAreaFor(m => m.Item.SampleData)
+    @Html.ValidationMessageFor(m => m.Item.SampleData)
+    </div>              
+
+    <button type="submit" value="save" class="btn btn-primary">Save</button>
+    <button class="btn" data-href=@Url.Action("List", new { id = Model.NavigationModel.Page.Id })>Cancel</button>
+    
+}

@@ -114,7 +114,8 @@ namespace EKContent.web.Controllers
             {
                 ParentId = parentId,
                 PageId = pageId,
-                NavigationModel = HomeIndexViewModelLoader.Create(id, _service)
+                NavigationModel = HomeIndexViewModelLoader.Create(id, _service),
+                Feeds = _service.Dal.FeedProvider.Get().ToList()
             };
             model.Page = model.Inserting() ? new Page {PageNavigation =  new PageNavigation{ParentId = parentId} } : page;
             return View(model);
@@ -126,7 +127,10 @@ namespace EKContent.web.Controllers
         public ActionResult EditPage(EditPageViewModel model)
         {
             if (!this.ModelState.IsValid)
+            {
+                model.Feeds = _service.Dal.FeedProvider.Get().ToList();
                 return View(model);
+            }
             var pages = _service.GetNavigation();
             var page = model.Inserting() ? new PageNavigation { ParentId = model.ParentId } : pages.Single(p => p.Id == model.NavigationModel.Page.PageNavigation.Id);
             model.Page.PageNavigation.TransferTo(page);

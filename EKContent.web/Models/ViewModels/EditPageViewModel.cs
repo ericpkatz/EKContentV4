@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using EKContent.bus.Concrete;
 using EKContent.bus.Entities;
+using EKContent.bus.Entitities;
 using EKContent.bus.Services;
 
 namespace EKContent.web.Models.ViewModels
@@ -27,6 +28,23 @@ namespace EKContent.web.Models.ViewModels
                     pt =>
                     new SelectListItem {Text = pt.ToString(), Value = pt.ToString(), Selected = Page.PageNavigation.PageType == pt}).
                     ToList();
+        }
+
+        private List<Feed> _feeds;
+        public List<Feed> Feeds
+        {
+            set { _feeds = value; }
+            get { return _feeds = _feeds ?? new List<Feed>(); }
+        }
+
+        public List<SelectListItem> SelectListFeeds()
+        {
+            var items =
+                Feeds.Select(
+                    i =>
+                    new SelectListItem { Value = i.Id.ToString(), Text = i.Title.ToString(), Selected = Page.PageNavigation.FeedId == i.Id }).ToList();
+            items.Insert(0, new SelectListItem { Text = "None", Value = "0" });
+            return items;
         }
 
         public bool Inserting()

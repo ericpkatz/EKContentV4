@@ -44,7 +44,11 @@
             @Html.Help("The body of the content item.")
         </div>   
     </div>    
-    
+    <div class="control-group">
+    @Html.LabelFor(m => m.Page.PageNavigation.FeedId, "Feed")
+    @Html.DropDownListFor(m => m.Page.PageNavigation.FeedId, Model.SelectListFeeds()) 
+     @Html.Help("Choose a feed to be shown on this page.")      
+    </div>    
     <div class="control-group">
     @Html.LabelFor(m => m.Page.PageNavigation.ShowTwitterFeed)
     @Html.CheckBoxFor(m => m.Page.PageNavigation.ShowTwitterFeed)

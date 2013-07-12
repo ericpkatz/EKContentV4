@@ -1,0 +1,32 @@
+﻿@model EKContent.web.Models.ViewModels.BaseEntityListViewModel<EKContent.bus.Entitities.Feed>
+@{
+    ViewBag.Title = "List";
+}
+
+@{
+    var model = Model.NavigationModel;
+}
+
+@Html.Partial("Nav", Model.NavigationModel)
+<h1>Feeds</h1>
+
+@Html.ActionLink("Add", "Edit", "Feed", new { id = Model.NavigationModel.Page.PageNavigation.Id }, new { @class="btn"})
+
+@foreach (var item in Model.Items)
+{
+    <div class="row">
+        <div class="span3">
+            @item.Title
+        </div>
+        <div class="span2">
+            @item.DateCreated.ToShortDateString()
+        </div>
+        <div class="span2">
+            @item.DateModified.ToShortDateString()
+        </div>
+        <div class="span2">
+             @Html.ActionLink("Edit", "Edit", "Feed", new { id = Model.NavigationModel.Page.PageNavigation.Id, itemId = item.Id }, new { @class="btn"})
+            @Html.ActionLink("Delete", "Delete", "Feed", new { id = Model.NavigationModel.Page.PageNavigation.Id, itemId = item.Id }, new { @class = "btn" })
+        </div>
+    </div>
+}

@@ -1,5 +1,6 @@
 ﻿using EKContent.bus.Abstract;
 using EKContent.bus.Entities;
+using EKContent.bus.Entitities;
 using ekUtilities;
 
 namespace EKContent.bus.Concrete
@@ -19,6 +20,11 @@ namespace EKContent.bus.Concrete
         public BaseService<Site> SiteProvider
         {
             get { return new BaseService<Site>(new FileRepository<Site>(), new WebCacheProvider(), null); }
+        }
+
+        public BaseService<Feed> FeedProvider
+        {
+            get { return new BaseService<Feed>(new FileRepository<Feed>(), new WebCacheProvider(), null); }
         }
 
         public BaseService<Image> ImageProvider
