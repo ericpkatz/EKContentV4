@@ -6,7 +6,7 @@ using System.Web.Caching;
 
 namespace ekUtilities
 {
-    public  class BaseService<T> where T: BaseEntity
+    public  class BaseService<T> : IBaseService<T> where T: BaseEntity
     {
         private IRepository<T> DAL = null;
         private ICacheProvider store = null;

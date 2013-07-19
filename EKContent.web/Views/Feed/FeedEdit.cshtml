@@ -12,6 +12,8 @@
 <script>
     $(function () {
         var setPreview = function () {
+            if ($("[name='Item.SampleData']").val() == "")
+                return;
             var data = JSON.parse($("[name='Item.SampleData']").val());
             var tmpl = $("[name='Item.Template']").val();
             $("#feed-preview").html(Mustache.to_html(tmpl, data));
@@ -29,7 +31,7 @@
 <div id="feed-preview"></div>
 @using (Html.BeginForm())
 {
-    @Html.HiddenFor(m => m.Item.Id);                                   
+@*    @Html.HiddenFor(m => m.Item.Id);                                   
     
     if (!Model.Item.IsNew())
     {
@@ -40,7 +42,8 @@
     @Html.LabelFor(m => m.Item.Title)
     @Html.TextBoxFor(m => m.Item.Title)
     @Html.ValidationMessageFor(m => m.Item.Title)
-    </div>
+    </div>*@
+        @Html.Partial("EditItem", new EKContent.web.Models.ViewModels.BaseEntityWrapper { Item = Model.Item, NavigationModel = Model.NavigationModel })
     <div class="control-group">
     @Html.LabelFor(m => m.Item.URL)
     @Html.TextBoxFor(m => m.Item.URL)

@@ -4,6 +4,22 @@
     ViewBag.Title = Model.Page.Title;
     ViewBag.SiteTitle = Model.Site.Title;
 }
+@if (Model.Page.PageNavigation.Feed != null)
+{
+    <script>
+        function ExecuteFeed(feedId, data) {
+            $(function () {
+                var tmpl = $("#feed-template-" + feedId).html();
+                var html = Mustache.to_html(tmpl, data);
+                $(".feed").html(html);
+            });
+        }
+    </script>
+    <script src="@Url.Action("Index", "ClientFeed", new { id = Model.Page.PageNavigation.Feed.Id, token = Model.Page.PageNavigation.Feed.Token()})"></script>
+     <script id="feed-template-@Model.Page.PageNavigation.Feed.Id" type="text/template">
+     @Html.Raw(Model.Page.PageNavigation.Feed.Template)
+     </script>
+}
 <script>
     $(function () {
         $(".delete").click(function () {
@@ -66,5 +82,14 @@ else if (Model.Page.PageNavigation.ShowSimpleDescription())
         ShowFeed = ((EKContent.bus.Services.PageService)ViewBag.Service).ShowTwitterFeed()
 })
 </div>
+}
+@if (Model.Page.PageNavigation.Feed != null)
+{
+    <div class="span3">
+        <h4>@Model.Page.PageNavigation.Feed.Title</h4>
+        <div class="feed">
+        
+        </div>
+    </div>
 }
 </div>

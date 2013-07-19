@@ -10,23 +10,16 @@
 @Html.Partial("Nav", Model.NavigationModel)
 <h1>Feeds</h1>
 
-@Html.ActionLink("Add", "Edit", "Feed", new { id = Model.NavigationModel.Page.PageNavigation.Id }, new { @class="btn"})
+<a class="btn btn-primary" href=@Url.Action("Edit", "Feed", new { id = Model.NavigationModel.Page.PageNavigation.Id }, null)><i class="icon-plus" ></i>Add</a>
 
 @foreach (var item in Model.Items)
 {
+    
+    @Html.Partial("LineItem", new EKContent.web.Models.ViewModels.BaseEntityWrapper { Item = item, NavigationModel = Model.NavigationModel })
     <div class="row">
-        <div class="span3">
-            @item.Title
-        </div>
         <div class="span2">
-            @item.DateCreated.ToShortDateString()
-        </div>
-        <div class="span2">
-            @item.DateModified.ToShortDateString()
-        </div>
-        <div class="span2">
-             @Html.ActionLink("Edit", "Edit", "Feed", new { id = Model.NavigationModel.Page.PageNavigation.Id, itemId = item.Id }, new { @class="btn"})
-            @Html.ActionLink("Delete", "Delete", "Feed", new { id = Model.NavigationModel.Page.PageNavigation.Id, itemId = item.Id }, new { @class = "btn" })
+            <small>@item.URL</small>
         </div>
     </div>
+
 }

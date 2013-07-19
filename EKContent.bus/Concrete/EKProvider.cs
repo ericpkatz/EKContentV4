@@ -7,7 +7,7 @@ namespace EKContent.bus.Concrete
 {
     public class EKProvider : IEKProvider
     {
-        public BaseService<PageNavigation> PageNavigationProvider
+        public IBaseService<PageNavigation> PageNavigationProvider
         {
             get { return new BaseService<PageNavigation>(new FileRepository<PageNavigation>(), new WebCacheProvider(), null); }
         }
@@ -17,17 +17,17 @@ namespace EKContent.bus.Concrete
             get { return new EkDataProvider(); }
         }
 
-        public BaseService<Site> SiteProvider
+        public IBaseService<Site> SiteProvider
         {
             get { return new BaseService<Site>(new FileRepository<Site>(), new WebCacheProvider(), null); }
         }
 
-        public BaseService<Feed> FeedProvider
+        public IBaseService<Feed> FeedProvider
         {
-            get { return new BaseService<Feed>(new FileRepository<Feed>(), new WebCacheProvider(), null); }
+            get { return new FeedProvider(); }
         }
 
-        public BaseService<Image> ImageProvider
+        public IBaseService<Image> ImageProvider
         {
             get { return new BaseService<Image>(new FileRepository<Image>(), new WebCacheProvider(), null); }
         }
@@ -39,24 +39,24 @@ namespace EKContent.bus.Concrete
         }
 
 
-        public BaseService<TwitterKeys> TwitterKeysProvider
+        public IBaseService<TwitterKeys> TwitterKeysProvider
         {
             get { return new BaseService<TwitterKeys>(new FileRepository<TwitterKeys>(), new WebCacheProvider(), null); }
         }
 
 
-        public BaseService<StyleSettings> StyleSettingsProvider
+        public IBaseService<StyleSettings> StyleSettingsProvider
         {
             get { return new BaseService<StyleSettings>(new FileRepository<StyleSettings>(), new WebCacheProvider(), null); }
         }
 
 
-        public BaseService<Color> ColorProvider
+        public IBaseService<Color> ColorProvider
         {
             get { return new BaseService<Color>(new FileRepository<Color>(), new WebCacheProvider(), null); }
         }
 
-        public BaseService<EKFile> FileProvider
+        public IBaseService<EKFile> FileProvider
         {
             get { return new BaseService<EKFile>(new FileRepository<EKFile>(), new WebCacheProvider(), null); }
         }

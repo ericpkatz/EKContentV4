@@ -60,6 +60,7 @@
     <Compile Include="Concrete\EkDataProvider.cs" />
     <Compile Include="Concrete\EKProvider.cs" />
     <Compile Include="Concrete\EKRoleProvider.cs" />
+    <Compile Include="Concrete\FeedProvider.cs" />
     <Compile Include="Concrete\TweetProvider.cs" />
     <Compile Include="Entitities\BaseContent.cs" />
     <Compile Include="Entitities\CacheItem.cs" />

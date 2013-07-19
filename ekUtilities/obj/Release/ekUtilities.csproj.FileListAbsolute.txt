@@ -8,3 +8,4 @@ C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\ekUtilitie
 C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\ekUtilities\bin\Release\ekUtilities.pdb
 C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\ekUtilities\bin\Release\log4net.dll
 C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\ekUtilities\bin\Release\log4net.xml
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\ekUtilities\obj\Release\ekUtilities.csprojResolveAssemblyReference.cache

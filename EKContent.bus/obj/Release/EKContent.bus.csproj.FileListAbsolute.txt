@@ -1,0 +1,13 @@
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\EKContent.bus\bin\Release\EKContent.bus.dll
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\EKContent.bus\bin\Release\EKContent.bus.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\EKContent.bus\bin\Release\DotNetOpenAuth.dll
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\EKContent.bus\bin\Release\ekUtilities.dll
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\EKContent.bus\bin\Release\Newtonsoft.Json.dll
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\EKContent.bus\bin\Release\log4net.dll
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\EKContent.bus\bin\Release\ekUtilities.pdb
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\EKContent.bus\bin\Release\DotNetOpenAuth.xml
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\EKContent.bus\bin\Release\Newtonsoft.Json.xml
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\EKContent.bus\bin\Release\log4net.xml
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\EKContent.bus\obj\Release\EKContent.bus.csprojResolveAssemblyReference.cache
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\EKContent.bus\obj\Release\EKContent.bus.dll
+C:\Users\ekatz\Documents\Magic Briefcase\complete_solutions\EkContent\EKContent.bus\obj\Release\EKContent.bus.pdb

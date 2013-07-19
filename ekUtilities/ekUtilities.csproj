@@ -52,6 +52,7 @@
     <Compile Include="BaseService.cs" />
     <Compile Include="EmptyCacheProvider.cs" />
     <Compile Include="FileRepository.cs" />
+    <Compile Include="IBaseService.cs" />
     <Compile Include="ICacheProvider.cs" />
     <Compile Include="ILogProvider.cs">
       <SubType>Code</SubType>

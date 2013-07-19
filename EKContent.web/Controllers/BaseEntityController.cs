@@ -11,8 +11,8 @@ namespace EKContent.web.Controllers
 {
     public  class  BaseEntityController<T,B> : BaseController where T : BaseEntity where B : new()
     {
-        private BaseService<T> EntityService { get; set; }
-        public BaseEntityController(IEKProvider provider, BaseService<T> svc)
+        private IBaseService<T> EntityService { get; set; }
+        public BaseEntityController(IEKProvider provider, IBaseService<T> svc)
             : base(provider)
         {
             EntityService = svc;

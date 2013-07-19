@@ -1,0 +1,41 @@
+﻿@model EKContent.web.Models.ViewModels.BaseEntityWrapper
+@{
+    ViewBag.Title = "List";
+}
+<hr />
+    <div class="row">
+        <div class="span3">
+            @Model.Item.Title
+        </div>
+        <div class="span2">
+            @Model.Item.DateCreated.ToShortDateString()
+        </div>
+        <div class="span2">
+            @Model.Item.DateModified.ToShortDateString()
+        </div>
+        <div class="span2">
+             <a href="@Url.Action( "Edit", "Feed", new { id = Model.NavigationModel.Page.PageNavigation.Id, itemId = Model.Item.Id }, null)" class="btn"><i class="icon-pencil"></i>Edit</a>
+            <a href="#delete-@Model.Item.Id" class="btn btn-warning" data-toggle="modal"><i class="icon-trash"></i>Delete</a>
+        </div>
+    </div>
+
+     <div id="delete-@Model.Item.Id" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                ×</button>
+                            <h3 id="myModalLabel">
+                                Warning!</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                               Are you sure you want to delete this item.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">
+                                Cancel</button>
+                            <button class="btn btn-primary" data-action="@Url.Action("Delete", new { id = Model.NavigationModel.Page.Id, itemId = Model.Item.Id })">
+                                Delete</button>
+                        </div>
+                    </div>
+

@@ -8,16 +8,16 @@ namespace EKContent.bus.Abstract
     public interface IEKProvider
     {
         ICacheProvider CacheProvider { get;  }
-        BaseService<PageNavigation> PageNavigationProvider { get; }
+        IBaseService<PageNavigation> PageNavigationProvider { get; }
         IEkDataProvider DataProvider{ get;}
-        BaseService<Site> SiteProvider { get; }
-        BaseService<Image> ImageProvider { get; }
+        IBaseService<Site> SiteProvider { get; }
+        IBaseService<Image> ImageProvider { get; }
         IEKRoleProvider RoleProvider { get; }
-        BaseService<TwitterKeys> TwitterKeysProvider { get; }
-        BaseService<StyleSettings> StyleSettingsProvider { get;  }
-        BaseService<Color> ColorProvider { get;  }
-        BaseService<EKFile> FileProvider { get; }
-        BaseService<Feed> FeedProvider { get; }
+        IBaseService<TwitterKeys> TwitterKeysProvider { get; }
+        IBaseService<StyleSettings> StyleSettingsProvider { get; }
+        IBaseService<Color> ColorProvider { get; }
+        IBaseService<EKFile> FileProvider { get; }
+        IBaseService<Feed> FeedProvider { get; }
         JArray Tweets(TwitterKeys keys);
     }
 }

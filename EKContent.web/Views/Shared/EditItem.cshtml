@@ -1,0 +1,16 @@
+﻿@model EKContent.web.Models.ViewModels.BaseEntityWrapper
+@{
+    ViewBag.Title = "List";
+}    
+    @Html.HiddenFor(m => m.Item.Id)                                   
+    
+    @if (!Model.Item.IsNew())
+    {
+        @Html.HiddenFor(m => m.Item.DateCreated)
+    }
+    @Html.HiddenFor(m => m.NavigationModel.Page.Id)
+    <div class="control-group">
+    @Html.LabelFor(m => m.Item.Title)
+    @Html.TextBoxFor(m => m.Item.Title)
+    @Html.ValidationMessageFor(m => m.Item.Title)
+    </div>
