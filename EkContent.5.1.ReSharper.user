@@ -8,57 +8,50 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Infrastructure/f:HtmlHelpers.cs" caret="0" fromTop="0" />
-      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Entitities/f:Content.cs" caret="417" fromTop="15" />
-      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:ViewModels/f:EditContentItemViewModel.cs" caret="694" fromTop="15" />
-      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Entitities/f:PageNavigation.cs" caret="2351" fromTop="55" />
-      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:ViewModels/f:EditPageViewModel.cs" caret="1494" fromTop="21" />
-      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Home/f:EditPage.cshtml" caret="0" fromTop="0" />
-      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Models/d:ViewModels/f:BaseEntityWrapper.cs" caret="307" fromTop="11" />
-      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:File/f:List.cshtml" caret="1313" fromTop="3" />
-      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Shared/f:Nav.cshtml" caret="4312" fromTop="28" />
-      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Shared/f:LineItem.cshtml" caret="1753" fromTop="20" />
       <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Feed/f:FeedList.cshtml" caret="452" fromTop="15" />
       <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Shared/f:EditItem.cshtml" caret="133" fromTop="4" />
       <File id="d:Miscellaneous Files/f:readme.txt/l:C!?Users?ekatz?Documents?Magic Briefcase?complete_solutions?EkContent?packages?RestSharp.104.1?readme.txt" caret="0" fromTop="0" />
       <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:HomeController.cs" caret="588" fromTop="9" />
       <File id="E43F99C4-E398-42F5-94B7-F2A2215F2868/f:FileRepository.cs" caret="1028" fromTop="31" />
-      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Entitities/f:Feed.cs" caret="192" fromTop="9" />
-      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Services/f:PageService.cs" caret="10149" fromTop="8" />
       <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Feed/f:FeedEdit.cshtml" caret="0" fromTop="0" />
-      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Home/f:Index.cshtml" caret="296" fromTop="5" />
       <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:ClientFeedController.cs" caret="432" fromTop="17" />
       <File id="E43F99C4-E398-42F5-94B7-F2A2215F2868/f:IBaseService.cs" caret="84" fromTop="4" />
-      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Abstract/f:IEKProvider.cs" caret="761" fromTop="19" />
       <File id="E43F99C4-E398-42F5-94B7-F2A2215F2868/f:BaseService.cs" caret="179" fromTop="8" />
       <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:ColorController.cs" caret="1142" fromTop="38" />
       <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:CacheController.cs" caret="477" fromTop="8" />
       <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:BaseEntityController.cs" caret="369" fromTop="13" />
       <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:FeedController.cs" caret="174" fromTop="4" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Home/f:Contact.cshtml" caret="0" fromTop="0" />
+      <File id="E43F99C4-E398-42F5-94B7-F2A2215F2868/d:membership/f:JSONRoleProvider.cs" caret="0" fromTop="0" />
+      <File id="E43F99C4-E398-42F5-94B7-F2A2215F2868/d:membership/f:JSONMembershipProvider.cs" caret="0" fromTop="0" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/f:Web.config" caret="1654" fromTop="6" />
+      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:EKProvider.cs" caret="191" fromTop="7" />
+      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Abstract/f:IEKProvider.cs" caret="468" fromTop="14" />
+      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Services/f:PageService.cs" caret="2513" fromTop="12" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:MemberController.cs" caret="632" fromTop="13" />
       <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:FeedProvider.cs" caret="817" fromTop="19" />
-      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:EKProvider.cs" caret="828" fromTop="15" />
-      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Home/f:Contact.cshtml" caret="348" fromTop="12" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/f:Global.asax.cs" caret="220" fromTop="8" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Content/d:less/f:bootstrap.less" caret="0" fromTop="0" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Content/d:less/f:hero-unit.less" caret="360" fromTop="16" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Properties/d:PublishProfiles/f:diy_live.pubxml" caret="0" fromTop="0" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Infrastructure/f:NavigationModelBinder.cs" caret="430" fromTop="15" />
+      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Entitities/f:Feed.cs" caret="192" fromTop="9" />
     </RecentFiles>
     <RecentEdits>
-      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Home/f:Index.cshtml" caret="2842" fromTop="29" />
-      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Home/f:Index.cshtml" caret="489" fromTop="13" />
-      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Home/f:Index.cshtml" caret="2793" fromTop="19" />
-      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Services/f:PageService.cs" caret="10149" fromTop="15" />
-      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Services/f:PageService.cs" caret="10149" fromTop="8" />
-      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Entitities/f:Feed.cs" caret="556" fromTop="18" />
       <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Home/f:Index.cshtml" caret="678" fromTop="13" />
       <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:ClientFeedController.cs" caret="1303" fromTop="22" />
       <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:ClientFeedController.cs" caret="1329" fromTop="32" />
       <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Controllers/f:FeedController.cs" caret="1988" fromTop="10" />
       <File id="E43F99C4-E398-42F5-94B7-F2A2215F2868/f:BaseService.cs" caret="479" fromTop="8" />
-      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Abstract/f:IEKProvider.cs" caret="761" fromTop="19" />
+      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Abstract/f:IEKProvider.cs" caret="763" fromTop="19" />
       <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:EKProvider.cs" caret="231" fromTop="4" />
       <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:EKProvider.cs" caret="571" fromTop="14" />
       <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:EKProvider.cs" caret="752" fromTop="19" />
-      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:EKProvider.cs" caret="1180" fromTop="36" />
-      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:EKProvider.cs" caret="1391" fromTop="25" />
-      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:EKProvider.cs" caret="1610" fromTop="31" />
-      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:EKProvider.cs" caret="1795" fromTop="36" />
+      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:EKProvider.cs" caret="1188" fromTop="36" />
+      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:EKProvider.cs" caret="1399" fromTop="25" />
+      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:EKProvider.cs" caret="1618" fromTop="31" />
+      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:EKProvider.cs" caret="1803" fromTop="36" />
       <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:FeedProvider.cs" caret="429" fromTop="14" />
       <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:FeedProvider.cs" caret="525" fromTop="19" />
       <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:FeedProvider.cs" caret="617" fromTop="24" />
@@ -70,6 +63,12 @@
       <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:FeedProvider.cs" caret="1932" fromTop="19" />
       <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:EKProvider.cs" caret="828" fromTop="15" />
       <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Views/d:Home/f:Contact.cshtml" caret="320" fromTop="12" />
+      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Concrete/f:EKProvider.cs" caret="1155" fromTop="13" />
+      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Abstract/f:IEKProvider.cs" caret="468" fromTop="14" />
+      <File id="2B8D0D77-1719-45A5-ABA7-267979B7638E/d:Services/f:PageService.cs" caret="2513" fromTop="12" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/f:Global.asax.cs" caret="1565" fromTop="28" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/f:Global.asax.cs" caret="1410" fromTop="25" />
+      <File id="669FEB53-9696-47C9-90C8-C7C878A1B615/d:Content/d:less/f:hero-unit.less" caret="104" fromTop="6" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

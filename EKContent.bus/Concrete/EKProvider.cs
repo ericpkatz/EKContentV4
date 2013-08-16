@@ -33,10 +33,10 @@ namespace EKContent.bus.Concrete
         }
 
 
-        public IEKRoleProvider RoleProvider
-        {
-            get { return new EKRoleProvider(); }
-        }
+        //public IEKRoleProvider RoleProvider
+        //{
+        //    get { return new EKRoleProvider(); }
+        //}
 
 
         public IBaseService<TwitterKeys> TwitterKeysProvider

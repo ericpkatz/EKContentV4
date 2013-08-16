@@ -12,7 +12,7 @@ namespace EKContent.bus.Abstract
         IEkDataProvider DataProvider{ get;}
         IBaseService<Site> SiteProvider { get; }
         IBaseService<Image> ImageProvider { get; }
-        IEKRoleProvider RoleProvider { get; }
+        //IEKRoleProvider RoleProvider { get; }
         IBaseService<TwitterKeys> TwitterKeysProvider { get; }
         IBaseService<StyleSettings> StyleSettingsProvider { get; }
         IBaseService<Color> ColorProvider { get; }

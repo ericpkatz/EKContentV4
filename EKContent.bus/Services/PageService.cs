@@ -81,7 +81,7 @@ namespace EKContent.bus.Services
         {
             _dal = provider;
             _dataProvider = provider.DataProvider;
-            _roleProvider = provider.RoleProvider;
+            //_roleProvider = provider.RoleProvider;
 
         }
 

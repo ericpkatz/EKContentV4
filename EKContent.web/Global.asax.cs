@@ -40,6 +40,13 @@ namespace EKContent.web
             );
 
             routes.MapRoute(
+                "Feeds", // Route name
+                "ClientFeed{id}.js", // URL with parameters
+                new { controller = "ClientFeed", action = "Index" },
+                new { id = @"\d+" }
+            );
+
+            routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults

@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using EKContent.bus.Concrete;
-using EKContent.bus.Entities;
+using EKContent.web.Models.Database.Concrete;
+using EKContent.web.Models.Entities;
 
 namespace EKContent.web.Models.Database.DotNetMembership
 {
